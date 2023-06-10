@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=devide-width, initial-scale=1.0">
+    <title> Florida Doctors Group</title>  
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;
+    400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+    <section class="sub-header">
+        <nav>
+         <a href="index.html"><img src="img/floridadoctorsgroup.png"></a>
+         <h4> Florida <br> Doctors <br> Group</h4>
+         <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html"> HOME</a></li>
+                <li><a href="about.html"> ABOUT US</a></li>
+                <li><a href="services.html"> SERVICES</a></li>
+                <li><a href="contact.html"> CONTACT US</a></li>
+                <li><a href="index.html#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                <li><a href="joinus.html"> JOIN US</a></li>
+                   <li> <i class="fa fa-facebook"></i> </li>
+                   <li> <i class="fa fa-instagram"></i> </li>
+               <li><i class="fa fa-twitter"></i></li> 
+               <li><i class="fa fa-linkedin"></i></li>
+
+     
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+            
+         
+        </div>
+         </section>
+
+        
+         <!-------------Contact Us----------->
+
+         <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>Contact Us</title>
+        </head>
+        
+        <body>
+            <section class="contact-section">
+                <!-- Google Maps Integration -->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.521813045945!2d-80.26167022303613!3d25.753322577357228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b79970372093%3A0xf8c5b50a05c3ca33!2s2100%20Ponce%20de%20Leon%2C%20Coral%20Gables%2C%20FL%2033134!5e0!3m2!1sen!2sus!4v1686436833256!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        
+                <!-- Image with text overlay -->
+                <div class="contact-info">
+                    <img src="img/location_img.png" alt="Clinic Location">
+                    <div class="overlay">
+                        <p class="address-heading">Address:</p>
+                        <p class="overlay-text">2100 Ponce De Leon Blvd. Suite 1240 Coral Gables, FL 33134</p>
+                        <p class="phone-heading">Call Us:</p>
+                        <p class="overlay-text">(786) 471-3535</p>
+                    </div>
+                </div>
+        
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="submit_form" method="post">
+                        <input type="text" name="first_name" placeholder="First Name*" required>
+                        <input type="text" name="last_name" placeholder="Last Name*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <input type="text" name="phone" placeholder="Phone Number*" required>
+                        <textarea name="message" placeholder="Your message*" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </body>
+
+                <!-------Footer --------->
+
+<section class="footer">
+    <h4>About Us</h4>
+   
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+   
+    <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-linkedin"></i>
+    </div>
+     <p> Made with <i class="fa fa-heart-o"></i> by LM</p>
+   </section>
+   
+   
+
+
+     
+     
+     
+     <!-----------JavaScript for toggle menu ------------------------------------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }       
+  </script>   
+</body>
+</html>
