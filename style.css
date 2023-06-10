@@ -219,12 +219,13 @@ transition: 0.5s;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 10%;
 }
 .services-col{
 flex-basis: 31%;   
 border-radius: 10px;
 margin-bottom: 5%;
-text-align: left; 
+text-align: center; 
 }
 .services-col img{
     width: 60px;
@@ -240,7 +241,7 @@ padding: 0;
 .services-col h3{
 margin-top: 16px;
 margin-bottom: 15px;
-text-align: left;
+
 }
 h1{ 
     font-size: 36px;
@@ -280,20 +281,21 @@ width: 100%;
     flex-direction: column;
 }
 }
-/*---------service--------*/
+/*---------service external page--------*/
 
 .service-col ul li{
 
-        list-style: none;
-        padding: 8px 12px;
-        }
+    list-style: none;
+    padding: 8px 12px;
+    text-align: left; 
+    }
 
-        .service-col ul li a{
-        color:#140101;
-        text-decoration: none;
-        font-size: 20px;
-        text-align: left;    
-        }
+    .service-col ul li a{
+    color:#140101;
+    text-decoration: none;
+    font-size: 20px;
+      
+    }
 
 
 
@@ -347,57 +349,6 @@ width: 100%;
     }
     }
     
-/*---------other services--------*/
-
-.service{
-width: 80%;
-margin: auto;
-text-align: center;
-padding-top: 50px;
-}
-.service-col{
-flex-basis: 32%;
-border-radius: 10px;
-margin-bottom: 30px;
-position: relative;
-overflow: hidden;
-}
-
-.campus-col img{
-width: 100%;
-display: block;
-}
-
-.layer{
-background: transparent;
-height: 100%;
-width: 100%;
-position: absolute;
-top: 0;
-left: 0;
-transition: 0.5s;
-}
-.layer:hover{
-background: rgba(226,0,0,0.4) ;
-}
-.layer h3{
-width: 100%;
-font-weight: 500;
-color:#fff;
-font-size: 26px;
-bottom: 0;
-left: 130px;
-transform: translateX(-50%);
-position: absolute;
-transition: 0.5s;
-}
-
-.layer:hover h3{
-bottom: 49%;
-opacity: 1;
-}
-
-
 
 
 
@@ -407,6 +358,9 @@ opacity: 1;
     width: 100%;
 }
 
+
+
+
 /*---------cta--------*/
 
 
@@ -415,7 +369,7 @@ margin: 100px auto;
 width: 80%;
 background-image: 
 linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65), rgba(0,0,0,0.38),
-            rgba(0,0,0,0.0)), url(img/front-page.jpg);
+            rgba(0,0,0,0.0)), url(img/quienes-somos.jpg);
 background-position: center;
 background-size: cover;
 border-radius: 10px;
