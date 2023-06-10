@@ -272,33 +272,30 @@ box-shadow: 0 0 20px 0px rgba(0,0,0,0.9 );
 .services-col img{
 width: 100%; 
 
-} 
-
-.why-col{
-flex-basis: 31%;   
-border-radius: 10px;
-margin-bottom: 5%;
-background: rgb(247, 201, 195);
 }
 
-.why-col p{
-    text-align: left;
-}
-
-.why-col h3{
-
-    text-align: center;
-    }
-.why-col .fa{
-    color:#f44336;
-   alignment: center;
-        }
 
 @media(max-width: 700px){
 .row{
     flex-direction: column;
 }
 }
+/*---------service--------*/
+
+.service-col ul li{
+
+        list-style: none;
+        padding: 8px 12px;
+        }
+
+        .service-col ul li a{
+        color:#140101;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: left;    
+        }
+
+
 
 /*---------testimonials--------*/
 .testimonials{
