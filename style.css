@@ -1,7 +1,9 @@
-*{  margin: 0;
-    padding: 0;
-    font-family: 'Playfair', serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
 
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 html {
@@ -9,15 +11,18 @@ html {
 }
 
 .header{
-min-height: 100vh;
-width: 100%;
-background-image: 
-linear-gradient(rgb(0,0,0,0.65), rgba(0,0,0,0.55), rgba(0,0,0,0.65),
-rgba(0,0,0,0.0)), url(img/Flordia\ Doctors\ group.jpg);
-background-position: center;
-background-size: cover;
-position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: 
+    linear-gradient(to top, rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+    url(img/Flordia\ Doctors\ group.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:#fff;
+    border-bottom: 3px solid #000000;
 }
+
 
 nav h4{
     color: #f0f0f0;
@@ -108,6 +113,7 @@ transition: 0.5s;
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 5px;
 }
 .hero-btn:hover{
     border: 1px solid #0652f7;
@@ -162,6 +168,7 @@ transition: 0.5s;
     background-size: cover;
     text-align: center;
     color:#fff;
+    border-bottom: 3px solid #000000;
 }
 .sub-header h1{
     margin-top: -100px;
@@ -173,26 +180,27 @@ transition: 0.5s;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-image: url(img/gradient.png);
-    background-size: cover;
+    /* Use CSS gradient instead of an image */
+    background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
 }
 
 .about-col{
-    flex-basis: 31%;   
+    flex-basis: calc(33.3333% - 40px); /* Divide by 3 and reduce a bit for margins */
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin: 0 20px; /* Add horizontal margin to space the columns */
     text-align: left; 
-
     }
 
 .about-col img{
-        width: 75%;
-        height: 80%;
-       
+    width: 80%; /* occupy the full width of parent */
+    height: auto; /* maintain the aspect ratio */
+    border: 2px solid #28118f;
+    border-radius: 10px; /* Optional - if you want rounded corners */
+    object-fit: cover; /* This ensures that the images keep their aspect ratio */
 }
 
 .about-col .ernesto{
-    margin-top: 15%;
+    margin-top: 30%;
 }
 
     .about-col p{
@@ -208,18 +216,19 @@ transition: 0.5s;
         .hero-btn1{
             display: inline-block;
             text-decoration: none;
-            color:#0b0beb;
-            border: 1px solid #0b21eb;
+            color:#ffffff;
+            border: 2px solid #ffffff;
             padding: 12px 34px;
             font-size: 13px;
-            background: transparent;
+            background: #000080;
             position: relative;
             cursor: pointer;
+            border-radius: 5px;
         }
         .hero-btn1:hover{
-            border: 1px solid #0652f7;
-            background:#0817f3;
-            color: rgb(242, 242, 248);
+            border: 2px solid #000080;
+            background:#ffffff;
+            color: #000000;
             transition: 1s;    
         }
 
@@ -227,21 +236,23 @@ transition: 0.5s;
 
 
 .services{
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box; /*to keep the section from going past 100% width with padding*/
     margin: auto;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 10%;
+    padding-left: 5%; /* Add left padding */
+    padding-right: 5%; /* Add right padding */
+    background: linear-gradient(to bottom, #E6F0FF, rgba(0, 128, 255, 0.9));
 }
 .services-col{
 flex-basis: 31%;   
 border-radius: 10px;
 margin-bottom: 5%;
 text-align: center; 
-
 /* Adding border */
 border: 2px solid #28118f;
-
 /* Adding padding */
 padding: 5px; /* 20 pixels of padding on all sides */
 }
@@ -348,17 +359,18 @@ width: 100%;
     color: white;
     text-align: center;
     background-color: #464ec280;
-    padding: 20px;
 }
 
 .address-heading,
 .phone-heading {
     font-weight: bold; /* Make the Address and Phone headings bold */
-    font-size: 25px; /* Increase the font size of Address and Phone headings */
+    font-size: 20px; /* Increase the font size of Address and Phone headings */
+    color: #D3D3D3
 }
 
 .overlay-text {
-    font-size: 22px; /* Increase the font size of all the text inside the overlay */
+    font-size: 18px; /* Increase the font size of all the text inside the overlay */
+    color: #D3D3D3
 }
 
 .contact-form {
@@ -403,6 +415,8 @@ width: 100%;
     padding-top: 100px;
     text-align: center; 
     background: url(img/testi.jpg);
+    border-bottom: 3px solid #000000;
+    border-top: 3px solid #000000;
     }
     
     .testimonial-col{
