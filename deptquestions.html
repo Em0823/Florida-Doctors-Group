@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=devide-width, initial-scale=1.0">
+    <title> Florida Doctors Group</title>  
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;
+    400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+    <section class="sub-header">
+        <nav>
+         <a href="index.html"><img src="img/floridadoctorsgroup.png"></a>
+         <h4> Florida <br> Doctors <br> Group</h4>
+         <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html"> HOME</a></li>
+                <li><a href="about.html"> ABOUT US</a></li>
+                <li><a href="services.html"> SERVICES</a></li>
+                <li><a href="contact.html"> CONTACT US</a></li>
+                <li><a href="index.html#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                <li><a href="joinus.html"> JOIN US</a></li>
+                   <li> <i class="fa fa-facebook"></i> </li>
+                   <li> <i class="fa fa-instagram"></i> </li>
+               <li><i class="fa fa-twitter"></i></li> 
+               <li><i class="fa fa-linkedin"></i></li>
+
+     
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Department Questionnaires</h1>
+            
+         
+        </div>
+         </section>
+
+        
+         <!-------------Dropdown Menu----------->
+
+         <body>
+
+            <div class="container mt-4">
+                <label for="department">Select a department from the dropdown menu below to be redirected to the appropriate survey:</label>
+                <select class="form-control" id="departmentSelect" name="department" onchange="redirectToQuestionnaire(this.value)">
+                  <option value="default">...</option>
+                  <option value="billing">Billing</option>
+                  <option value="coding">Coding</option>
+                  <option value="contracting">Contracting</option>
+                  <option value="credentialing">Credentialing</option>
+                  <option value="customer_service">Customer Service</option>
+                  <option value="finance">Finance</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="medical_consult">Medical Consulting</option>
+                  <option value="referrals">Referrals</option>
+                </select>
+                
+              </div>
+            
+              <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+              <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+              <script>
+                function redirectToQuestionnaire(department) {
+                    if (department) {
+                        window.location.href = department + '.html';
+                    }
+                }
+            </script>
+
+        <!-------Footer --------->
+
+<section class="footer">
+    <h4>About Us</h4>
+   
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+   
+    <div class="icons">
+       <i class="fa fa-facebook"></i>
+       <i class="fa fa-instagram"></i>
+       <i class="fa fa-twitter"></i>
+       <i class="fa fa-linkedin"></i>
+    </div>
+     <p> Made with <i class="fa fa-heart-o"></i> by LM</p>
+   </section>
+   
+   
+
+
+     
+     
+     
+     <!-----------JavaScript for toggle menu ------------------------------------->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }       
+  </script>   
+</body>
+</html>

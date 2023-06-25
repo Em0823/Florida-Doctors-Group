@@ -563,3 +563,8 @@ padding: 18px 0;
 color:#2407c7;
 }
 
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+}
