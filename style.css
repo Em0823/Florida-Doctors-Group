@@ -14,8 +14,8 @@ html {
     height: 100vh;
     width: 100%;
     background-image: 
-    linear-gradient(to top, rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
-    url(img/Flordia\ Doctors\ group.jpg);
+    linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53),
+    rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -183,6 +183,11 @@ transition: 0.5s;
     /* Use CSS gradient instead of an image */
     background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
 }
+    .about p{
+        text-align:center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 
 .about-col{
     flex-basis: calc(33.3333% - 40px); /* Divide by 3 and reduce a bit for margins */
@@ -192,23 +197,23 @@ transition: 0.5s;
     }
 
 .about-col img{
-    width: 80%; /* occupy the full width of parent */
+    width: 70%; /* occupy the full width of parent */
     height: auto; /* maintain the aspect ratio */
+    margin-left: 10%;
+    margin-right: 10%;
     border: 2px solid #28118f;
     border-radius: 10px; /* Optional - if you want rounded corners */
     object-fit: cover; /* This ensures that the images keep their aspect ratio */
 }
 
-.about-col .ernesto{
-    margin-top: 30%;
-}
-
     .about-col p{
         padding: 0;
+        margin-left: 10%;
         } 
         
     .about-col h3{
         margin-top: 16px;
+        margin-left: 10%;
         margin-bottom: 15px;
         text-align: left;
         }
@@ -412,7 +417,6 @@ width: 100%;
     width: 100%;
     height: 100%;
     margin: auto;
-    padding-top: 100px;
     text-align: center; 
     background: url(img/testi.jpg);
     border-bottom: 3px solid #000000;
@@ -421,13 +425,12 @@ width: 100%;
     
     .testimonial-col{
     flex-basis: 23%;
-    margin-bottom: 5%;
     text-align: left;
-    background: #7bb7fc;
-    opacity: 65%;
-    padding: 60px;
+    background-color:rgba(5, 112, 233, 0.6);  
+    padding: 50px;
     cursor: pointer;
     display:flex;
+    border-radius: 6%;
     }
     .testimonial-col img{
     height: 100px; /* Set height for smaller screens */
@@ -459,6 +462,13 @@ width: 100%;
     margin-right: 15px;
     }
     }
+
+    .testimonials .row{
+       margin-left: 5%;
+       margin-right: 5%;
+       margin-bottom: 10%;
+       margin-top: 10%;
+    }
     
 
 
@@ -469,8 +479,9 @@ width: 100%;
     display: flex;
     align-items: flex-start;
     padding: 40px;
-    padding-top: 100px; /* Add padding to the top of the section */
-    padding-bottom: 80px; /* Add padding to the bottom of the section */
+    padding-top: 18%; /* Add padding to the top of the section */
+    padding-bottom: 18%; /* Add padding to the bottom of the section */
+    border-bottom: 3px solid #000000;
 }
 
 .title {
@@ -496,7 +507,7 @@ width: 100%;
 }
 
 .logos {
-    flex: 2;
+    flex: 1;
     padding-left: 80px; /* Add padding to the left side of the logos */
 }
 
@@ -545,8 +556,10 @@ padding:0;
 width: 100%;
 text-align: center;
 padding: 30px 0;
+background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
 
 }
+
 .footer h4{
 margin-bottom: 25px;
 margin-top: 20px;
@@ -568,3 +581,75 @@ color:#2407c7;
     font-weight: bold;
     margin-top: 5px;
 }
+
+/*---------------drop down menu--------------*/
+
+.drop-downmenu{
+    padding-top: 10%;
+    padding-bottom: 20%;
+    background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
+
+}
+
+/*---------------questionarie--------------*/
+
+.questionnaire{
+    margin-top: 8%;
+    margin-left: 10%;
+
+}
+
+.questionnaire h1{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+
+div .form-group{
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Style the text inputs */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .contact-info{
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 15%;
+margin-top: 10%Fbu;
+  }
+  
+  button.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a7f92;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #5a6268;
+  }
+
+  
