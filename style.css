@@ -10,12 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.header{
+.header {
     height: 100vh;
     width: 100%;
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53),
-    rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53), rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -23,25 +21,23 @@ html {
     border-bottom: 3px solid #000000;
 }
 
-
-nav h4{
+nav h4 {
     color: #f0f0f0;
     font-size: 24px;
     margin-left: 1%;
 }
-nav{
-display: flex;
-padding: 2% 6%;
-justify-content: space-between;
-align-items: center;
 
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav img{
-width: 150px;
-height: 150px;
-border-radius: 50%;
-
+nav img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .nav-links{
@@ -56,29 +52,32 @@ padding: 8px 12px;
 position: relative;
 }
 
-.nav-links ul li a{
-color:#fff;
-text-decoration: none;
-font-size: 13;
+.header-nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
 }
-.nav-links ul li::after{
-content: '';
-width:0%;
-height: 2px;
-background: #2e04e7;
-display: block;
-margin: auto;
-transition: 0.5s;
-}  
-.nav-links ul li:hover::after{
-content: '';
-width:100%;
-height: 2px;
-background: #0905f8;
-display: block;
-margin: auto;
-transition: 0.5s;
+
+.header-nav-links ul li::after {
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #2e04e7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
+
+.header-nav-links ul li:hover::after {
+    content: '';
+    width:100%;
+    height: 2px;
+    background: #0905f8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
 
 .text-box{
     width: 90%;
@@ -86,7 +85,7 @@ transition: 0.5s;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-30%);
     text-align: center;
 }
 .text-box h1{
@@ -122,9 +121,13 @@ transition: 0.5s;
     transition: 1s;    
 }
 
- nav .fa{
+nav .fa{
     display: none;
  }
+
+ nav .fa.social-icon {
+    display: inline-block;
+}
 
 @media(max-width: 700px){
     .text-box h1{
@@ -514,14 +517,13 @@ width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px; /* Adjust this value based on your design needs */
+    width: 30%; /* Adjust this value based on your design needs */
     height: 200px; /* Adjust this to control the uniform height */
-    margin-bottom: 5px; /* Add bottom margin to each figure container for mobile view */
-
+    margin: 1%; /* This creates a space around each box */
 }
 
 .logos img {
-    width: 100px; /* Adjust this to control the width of the logo */
+    width: 150px; /* Adjust this to control the width of the logo */
     height: 75px; /* Adjust this to control the height of the logo */
     border: 2px solid #000;
     object-fit: contains;
@@ -530,7 +532,7 @@ width: 100%;
 
 .logo-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* This will distribute the space evenly between the boxes */
     margin-bottom: 20px;
 }
 
@@ -540,6 +542,11 @@ width: 100%;
 }
 
 @media (max-width: 600px) {
+    .figure-container {
+        width: 80%; /* Adjust this to control the box width on smaller screens */
+        margin: 10px auto; /* This centers the box and gives it a top and bottom margin of 10px */
+    }
+
     .logo-row {
         flex-direction: column;
         align-items: center;
@@ -589,6 +596,7 @@ margin-bottom: 25px;
 margin-top: 20px;
 font-weight: 600;
 }
+
 .icons .fa{
 color:#070bf8;
 margin: 0 13px;
@@ -596,8 +604,34 @@ cursor: pointer;
 padding: 18px 0;
 }
 
-.fa-heart-o{
-color:#2407c7;
+.footer-nav-links ul li a {
+    text-decoration: none;
+    color: #FFFFFF; 
+    font-size: 20px;
+}
+
+.footer .fa {
+    color: #fff;
+}
+
+.footer-nav-links ul li::after {
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #000033;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footer-nav-links ul li:hover::after {
+    content: '';
+    width:100%;
+    height: 2px;
+    background: #000033;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
 .error-message {
@@ -655,10 +689,10 @@ label {
   }
 
   .contact-info{
-margin-left: 10%;
-margin-right: 10%;
-margin-bottom: 15%;
-margin-top: 10%Fbu;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+    margin-top: 10%Fbu;
   }
   
   button.btn-secondary {
