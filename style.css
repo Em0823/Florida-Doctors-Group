@@ -13,7 +13,13 @@ html {
 .header {
     height: 100vh;
     width: 100%;
+<<<<<<< HEAD
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53),
+    rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
+=======
     background-image: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53), rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -541,11 +547,17 @@ h3{
     flex-direction: column;
     align-items: center;
     padding: 40px;
+<<<<<<< HEAD
+    padding-top: 18%; /* Add padding to the top of the section */
+    padding-bottom: 18%; /* Add padding to the bottom of the section */
+    border-bottom: 3px solid #000000;
+=======
     padding-top: 18%;
     padding-bottom: 18%;
     border-bottom: 3px solid #000000;
     background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
     animation: 2s ease-out 0s 1 fadeIn;
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .title {
@@ -571,6 +583,11 @@ h3{
     
 }
 
+<<<<<<< HEAD
+.logos {
+    flex: 1;
+    padding-left: 80px; /* Add padding to the left side of the logos */
+=======
 .figure-container {
     display: flex;
     flex-direction: column;
@@ -586,6 +603,7 @@ h3{
     border: 2px solid #000;
     object-fit: contains;
     border-radius: 10px
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .logo-row {
@@ -646,8 +664,13 @@ padding:0;
 width: 100%;
 text-align: center;
 padding: 30px 0;
+<<<<<<< HEAD
+background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
+
+=======
 background: linear-gradient(to bottom, #1a2a6c, rgba(0, 128, 255, 0.9));;
 animation: 2s ease-out 0s 1 fadeIn;
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .footer h4{
@@ -744,10 +767,17 @@ label {
   }
 
   .contact-info{
+<<<<<<< HEAD
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 15%;
+margin-top: 10%Fbu;
+=======
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 15%;
     margin-top: 10%Fbu;
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
   }
   
   button.btn-secondary {
