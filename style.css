@@ -10,43 +10,47 @@ html {
     scroll-behavior: smooth;
 }
 
-.header{
+.header {
     height: 100vh;
     width: 100%;
+<<<<<<< HEAD
     background-image: 
     linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53),
     rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
+=======
+    background-image: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53), rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
     background-position: center;
     background-size: cover;
     text-align: center;
     color:#fff;
     border-bottom: 3px solid #000000;
+    animation: 2s ease-out 0s 1 fadeIn;
 }
 
-
-nav h4{
+nav h4 {
     color: #f0f0f0;
     font-size: 24px;
     margin-left: 1%;
 }
-nav{
-display: flex;
-padding: 2% 6%;
-justify-content: space-between;
-align-items: center;
 
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav img{
-width: 150px;
-height: 150px;
-border-radius: 50%;
-
+nav img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .nav-links{
 flex: 1;
 text-align: right;
+animation: slide-in-nav 1s ease-out;
 }
 
 .nav-links ul li{
@@ -56,29 +60,32 @@ padding: 8px 12px;
 position: relative;
 }
 
-.nav-links ul li a{
-color:#fff;
-text-decoration: none;
-font-size: 13;
+.header-nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
 }
-.nav-links ul li::after{
-content: '';
-width:0%;
-height: 2px;
-background: #2e04e7;
-display: block;
-margin: auto;
-transition: 0.5s;
-}  
-.nav-links ul li:hover::after{
-content: '';
-width:100%;
-height: 2px;
-background: #0905f8;
-display: block;
-margin: auto;
-transition: 0.5s;
+
+.header-nav-links ul li::after {
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #2e04e7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
+
+.header-nav-links ul li:hover::after {
+    content: '';
+    width:100%;
+    height: 2px;
+    background: #0905f8;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
 
 .text-box{
     width: 90%;
@@ -86,7 +93,7 @@ transition: 0.5s;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-30%);
     text-align: center;
 }
 .text-box h1{
@@ -122,9 +129,13 @@ transition: 0.5s;
     transition: 1s;    
 }
 
- nav .fa{
+nav .fa{
     display: none;
  }
+
+ nav .fa.social-icon {
+    display: inline-block;
+}
 
 @media(max-width: 700px){
     .text-box h1{
@@ -156,6 +167,57 @@ transition: 0.5s;
     }
 }
 
+/* Define the slide-in animation */
+@keyframes slide-in {
+    0% {
+        right: -200px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide-in-nav {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Define the slide-out animation */
+@keyframes slide-out {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -200px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-links.slide-in {
+    right: 0;
+    animation: slide-in 1s forwards;
+}
+
+/* Apply the slide-out animation when the nav-links are not visible */
+.nav-links.slide-out {
+    right: -200px;
+    animation: slide-out 1s forwards;
+}
+
 /*---------About US--------*/
 
 
@@ -180,8 +242,8 @@ transition: 0.5s;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    /* Use CSS gradient instead of an image */
     background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
+    animation: 2s ease-out 0s 1 fadeIn;
 }
     .about p{
         text-align:center;
@@ -219,7 +281,7 @@ transition: 0.5s;
         }
 
         .hero-btn1{
-            display: inline-block;
+            display: block;
             text-decoration: none;
             color:#ffffff;
             border: 2px solid #ffffff;
@@ -229,6 +291,8 @@ transition: 0.5s;
             position: relative;
             cursor: pointer;
             border-radius: 5px;
+            width: fit-content;
+            margin: 20px auto 0;
         }
         .hero-btn1:hover{
             border: 2px solid #000080;
@@ -239,48 +303,49 @@ transition: 0.5s;
 
 /*---------services--------*/
 
-
 .services{
     width: 100%;
-    box-sizing: border-box; /*to keep the section from going past 100% width with padding*/
+    box-sizing: border-box;
     margin: auto;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 10%;
-    padding-left: 5%; /* Add left padding */
-    padding-right: 5%; /* Add right padding */
+    padding-left: 5%; 
+    padding-right: 5%; 
     background: linear-gradient(to bottom, #E6F0FF, rgba(0, 128, 255, 0.9));
+    animation: 2s ease-out 0s 1 fadeIn;
 }
+
 .services-col{
-flex-basis: 31%;   
-border-radius: 10px;
-margin-bottom: 5%;
-text-align: center; 
-/* Adding border */
-border: 2px solid #28118f;
-/* Adding padding */
-padding: 5px; /* 20 pixels of padding on all sides */
+    flex-basis: 31%;   
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center; 
+    border: 2px solid #28118f;
+    padding: 5px; 
+    background-color: white; /* This will set the background color of the boxes to white */
 }
+
 .services-col img{
     width: 60px;
     height: 255px;
     border-radius: 10px;
-    
 }
 
 .services-col p{
-padding: 0;
+    padding: 0;
 } 
 
 .services-col h3{
-margin-top: 16px;
-margin-bottom: 15px;
-
+    margin-top: 16px;
+    margin-bottom: 15px;
 }
+
 h1{ 
     font-size: 36px;
     font-weight: 600;
 }
+
 p{
     color: black;
     font-size: 14px;
@@ -288,33 +353,33 @@ p{
     line-height: 22px;
     padding: 10px;
 }
+
 .row{
-margin-top: 5%;
-display: flex;
-justify-content: space-between;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
-
-h3{ text-align: center;
-font-weight: 600;
-margin: 10px 0;
+h3{ 
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
 .services-col:hover{
-box-shadow: 0 0 20px 0px rgba(0,0,0,0.9 );
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.9 );
 }
 
 .services-col img{
-width: 100%; 
-
+    width: 100%; 
 }
-
 
 @media(max-width: 700px){
-.row{
-    flex-direction: column;
+    .row{
+        flex-direction: column;
+    }
 }
-}
+
 /*---------service external page--------*/
 
 .service-col ul li{
@@ -421,6 +486,7 @@ width: 100%;
     background: url(img/testi.jpg);
     border-bottom: 3px solid #000000;
     border-top: 3px solid #000000;
+    animation: 2s ease-out 0s 1 fadeIn;
     }
     
     .testimonial-col{
@@ -477,18 +543,26 @@ width: 100%;
 
 .affiliated-health-plans {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
+<<<<<<< HEAD
     padding-top: 18%; /* Add padding to the top of the section */
     padding-bottom: 18%; /* Add padding to the bottom of the section */
     border-bottom: 3px solid #000000;
+=======
+    padding-top: 18%;
+    padding-bottom: 18%;
+    border-bottom: 3px solid #000000;
+    background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
+    animation: 2s ease-out 0s 1 fadeIn;
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .title {
-    flex: 1;
-    text-align: left;
-    margin-right: 40px;
-    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    
 }
 
 .title h2 {
@@ -499,27 +573,59 @@ width: 100%;
     border: 0;
     border-bottom: 2px solid black;
     margin: 10px 0;
+    
 }
 
 .title .subtitle {
     font-weight: normal;
     font-size: 18px;
+    
 }
 
+<<<<<<< HEAD
 .logos {
     flex: 1;
     padding-left: 80px; /* Add padding to the left side of the logos */
+=======
+.figure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; /* Adjust this value based on your design needs */
+    height: 200px; /* Adjust this to control the uniform height */
+    margin: 0.75%; /* This creates a space around each box */
+}
+
+.logos img {
+    width: 150px; /* Adjust this to control the width of the logo */
+    height: 75px; /* Adjust this to control the height of the logo */
+    border: 2px solid #000;
+    object-fit: contains;
+    border-radius: 10px
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .logo-row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Adjust this for spacing between rows */
+    justify-content: space-between; /* This will distribute the space evenly between the boxes */
+    margin-bottom: 20px;
 }
 
-.logos img {
-    max-width: 100px; /* Adjust this value to set the logo sizes */
-    height: auto;
+.logo-name {
+    text-align: center;
+    padding: 7.5px; /* Adjust this value based on your design needs */
+}
+
+@media (max-width: 600px) {
+    .figure-container {
+        width: 80%; /* Adjust this to control the box width on smaller screens */
+        margin: 10px auto; /* This centers the box and gives it a top and bottom margin of 10px */
+    }
+
+    .logo-row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /*---------cta--------*/
@@ -536,6 +642,7 @@ background-size: cover;
 border-radius: 10px;
 text-align: center;
 padding: 100px 0;
+animation: 2s ease-out 0s 1 fadeIn;
 }
 
 .cta h1{
@@ -556,24 +663,52 @@ padding:0;
 width: 100%;
 text-align: center;
 padding: 30px 0;
+<<<<<<< HEAD
 background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
 
+=======
+background: linear-gradient(to bottom, #1a2a6c, rgba(0, 128, 255, 0.9));;
+animation: 2s ease-out 0s 1 fadeIn;
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .footer h4{
-margin-bottom: 25px;
-margin-top: 20px;
-font-weight: 600;
-}
-.icons .fa{
-color:#070bf8;
-margin: 0 13px;
-cursor: pointer;
-padding: 18px 0;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
 }
 
-.fa-heart-o{
-color:#2407c7;
+.footer-nav-links ul li a {
+    text-decoration: none;
+    color: #FFFFFF; 
+    font-size: 20px;
+}
+
+.footer .fa {
+    color: #fff;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.footer-nav-links ul li::after {
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #000033;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.footer-nav-links ul li:hover::after {
+    content: '';
+    width:100%;
+    height: 2px;
+    background: #000033;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
 .error-message {
@@ -631,10 +766,17 @@ label {
   }
 
   .contact-info{
+<<<<<<< HEAD
 margin-left: 10%;
 margin-right: 10%;
 margin-bottom: 15%;
 margin-top: 10%Fbu;
+=======
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+    margin-top: 10%Fbu;
+>>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
   }
   
   button.btn-secondary {
