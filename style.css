@@ -13,13 +13,7 @@ html {
 .header {
     height: 100vh;
     width: 100%;
-<<<<<<< HEAD
-    background-image: 
-    linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53),
-    rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
-=======
     background-image: linear-gradient(rgba(0,0,0,0.63), rgba(0,0,0,0.63), rgba(0,0,0,0.53), rgba(0,0,0,0.4)), url(img/fdg\ backg.jpg);
->>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -312,7 +306,7 @@ nav .fa{
     padding-bottom: 10%;
     padding-left: 5%; 
     padding-right: 5%; 
-    background: linear-gradient(to bottom, #E6F0FF, rgba(0, 128, 255, 0.9));
+    background: linear-gradient(to bottom, #E6F0FF, rgba(0, 128, 255, 0.9)), url(img/business\ management.jpg);
     animation: 2s ease-out 0s 1 fadeIn;
 }
 
@@ -380,21 +374,88 @@ h3{
     }
 }
 
+
+
+
 /*---------service external page--------*/
 
-.service-col ul li{
+.services1 {
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10%;
+   
+    background-image: linear-gradient(to bottom, rgba(245, 235, 235, 0.63), rgba(109, 104, 104, 0.63), rgba(80, 77, 77, 0.53), rgba(7, 6, 6, 0.4)), url(img/business\ management.jpg);
+    animation: 2s ease-out 0s 1 fadeIn;
+}
 
+.services-col1 {
+
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center; 
+}
+
+.services-col1 h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.services1 h1 {
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+.services1 p {
+    
+    margin-right: 10%;
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.row1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.service-col1 ul li {
     list-style: none;
     padding: 8px 12px;
     text-align: left; 
-    }
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    opacity: 1;
+}
 
-    .service-col ul li a{
-    color:#140101;
+.service-col1 ul li a {
+    color: #140101;
     text-decoration: none;
     font-size: 20px;
-      
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
     }
+}
+
+
 
 /*---------------contact us external page--------------*/
 
@@ -546,17 +607,11 @@ h3{
     flex-direction: column;
     align-items: center;
     padding: 40px;
-<<<<<<< HEAD
-    padding-top: 18%; /* Add padding to the top of the section */
-    padding-bottom: 18%; /* Add padding to the bottom of the section */
-    border-bottom: 3px solid #000000;
-=======
     padding-top: 18%;
     padding-bottom: 18%;
     border-bottom: 3px solid #000000;
     background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
     animation: 2s ease-out 0s 1 fadeIn;
->>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .title {
@@ -582,11 +637,6 @@ h3{
     
 }
 
-<<<<<<< HEAD
-.logos {
-    flex: 1;
-    padding-left: 80px; /* Add padding to the left side of the logos */
-=======
 .figure-container {
     display: flex;
     flex-direction: column;
@@ -602,7 +652,6 @@ h3{
     border: 2px solid #000;
     object-fit: contains;
     border-radius: 10px
->>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .logo-row {
@@ -663,13 +712,8 @@ padding:0;
 width: 100%;
 text-align: center;
 padding: 30px 0;
-<<<<<<< HEAD
-background: linear-gradient(to top, #E6F0FF, rgba(0, 128, 255, 0.9));
-
-=======
 background: linear-gradient(to bottom, #1a2a6c, rgba(0, 128, 255, 0.9));;
 animation: 2s ease-out 0s 1 fadeIn;
->>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
 }
 
 .footer h4{
@@ -766,17 +810,10 @@ label {
   }
 
   .contact-info{
-<<<<<<< HEAD
-margin-left: 10%;
-margin-right: 10%;
-margin-bottom: 15%;
-margin-top: 10%Fbu;
-=======
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 15%;
     margin-top: 10%Fbu;
->>>>>>> 34bca4e98e5d88ce9fc0fd084e1fce1cfe8e75f6
   }
   
   button.btn-secondary {
