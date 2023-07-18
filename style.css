@@ -131,6 +131,18 @@ nav .fa{
     display: inline-block;
 }
 
+.nav-links.slide-in {
+    right: 0;
+    animation: slide-in 1s forwards;
+}
+
+/* Apply the slide-out animation when the nav-links are not visible */
+.nav-links.slide-out {
+    right: -200px;
+    animation: slide-out 1s forwards;
+}
+
+
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px; 
@@ -201,16 +213,6 @@ nav .fa{
     }
 }
 
-.nav-links.slide-in {
-    right: 0;
-    animation: slide-in 1s forwards;
-}
-
-/* Apply the slide-out animation when the nav-links are not visible */
-.nav-links.slide-out {
-    right: -200px;
-    animation: slide-out 1s forwards;
-}
 
 /*---------About US--------*/
 
@@ -247,26 +249,36 @@ nav .fa{
     }
 
 .about-col{
-    flex-basis: calc(33.3333% - 40px); /* Divide by 3 and reduce a bit for margins */
-    border-radius: 10px;
-    margin: 0 20px; /* Add horizontal margin to space the columns */
-    text-align: left; 
-    }
-
-.about-col img{
-    width: 70%; /* occupy the full width of parent */
-    height: auto; /* maintain the aspect ratio */
-    margin-left: 10%;
-    margin-right: 10%;
-    border: 2px solid #28118f;
-    border-radius: 10px; /* Optional - if you want rounded corners */
-    object-fit: cover; /* This ensures that the images keep their aspect ratio */
+    flex-basis: calc(25% - 40px); /* Divide by 4 and reduce a bit for margins */
+  border-radius: 10px;
+  margin: 0 20px;
+  text-align: left;
 }
 
-    .about-col p{
-        padding: 0;
-        margin-left: 10%;
-        } 
+.about .row {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about p {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+.about-col img {
+    width: 100%;
+    height: 60%;
+    border: 2px solid #28118f;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+
+  .about-col p {
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+  }
         
     .about-col h3{
         margin-top: 16px;
@@ -296,77 +308,96 @@ nav .fa{
             transition: 1s;    
         }
 
-/*---------services--------*/
 
-.services{
+      
+/*---------services--------*/
+.services {
     width: 100%;
     box-sizing: border-box;
     margin: auto;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 10%;
-    padding-left: 5%; 
-    padding-right: 5%; 
+    padding-left: 5%;
+    padding-right: 5%;
     background: linear-gradient(to bottom, #E6F0FF, rgba(0, 128, 255, 0.9)), url(img/business\ management.jpg);
     animation: 2s ease-out 0s 1 fadeIn;
+  }
+  .services-col {
+  flex-basis: 23%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+  border: 2px solid #28118f;
+  padding: 5px;
+  background-color: white;
+  
 }
-
-.services-col{
-    flex-basis: 31%;   
+  
+  .services-col img {
+    width: 100%;
+    height: 40%; /* Removed the fixed height to maintain aspect ratio */
     border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: center; 
-    border: 2px solid #28118f;
-    padding: 5px; 
-    background-color: white; /* This will set the background color of the boxes to white */
+  }
+  
+  .services-col p {
+    text-align: left;
+    margin: 0;
 }
-
-.services-col img{
-    width: 60px;
-    height: 255px;
-    border-radius: 10px;
-}
-
-.services-col p{
-    padding: 0;
-} 
-
-.services-col h3{
+  
+  .services-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
-}
-
-h1{ 
+  }
+  
+  .service-col h1 {
     font-size: 36px;
     font-weight: 600;
-}
-
-p{
+  }
+  
+  p {
     color: black;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
-
-.row{
+  }
+  
+  .row{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-h3{ 
+  h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+  }
+  
+  .services-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.9);
+  }
+  /* need editing to put buttom in place after row being of 4*/
+  .hero-btn2{
+    display: block;
+    text-decoration: none;
+    color:#ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #000080;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto 0;
 }
-
-.services-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.9 );
-}
-
-.services-col img{
-    width: 100%; 
+.hero-btn2:hover{
+    border: 2px solid #000080;
+    background:#ffffff;
+    color: #000000;
+    transition: 1s;    
 }
 
 @media(max-width: 700px){
@@ -376,10 +407,7 @@ h3{
 }
 
 
-
-
-/*---------service external page--------*/
-
+/*----------Services menu tab -------*/
 .services1 {
     width: 100%;
     box-sizing: border-box;
@@ -387,68 +415,108 @@ h3{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 10%;
-   
-    background-image: linear-gradient(to bottom, rgba(245, 235, 235, 0.63), rgba(109, 104, 104, 0.63), rgba(80, 77, 77, 0.53), rgba(7, 6, 6, 0.4)), url(img/business\ management.jpg);
-    animation: 2s ease-out 0s 1 fadeIn;
-}
-
-.services-col1 {
-
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: center; 
-}
-
-.services-col1 h3 {
-    margin-top: 16px;
-    margin-bottom: 15px;
-}
-
-.services1 h1 {
-    font-size: 36px;
-    font-weight: 600;
-    
-}
-
-.services1 p {
-    
-    margin-right: 10%;
-    color: black;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    opacity: 1;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .row1 {
     margin-top: 5%;
     display: flex;
+    flex-wrap: wrap; /* Added flex-wrap to wrap the columns */
     justify-content: space-between;
 }
-
-h3 {
-    text-align: center;
+.services1 h1 {
+    font-size: 36px;
     font-weight: 600;
-    margin: 10px 0;
+    color: rgb(40, 37, 233);
+    margin-bottom: 20px;
 }
 
-.service-col1 ul li {
-    list-style: none;
-    padding: 8px 12px;
-    text-align: left; 
-    background-color: rgba(255, 255, 255, 0.3);
+.services1 p {
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
     border-radius: 10px;
     opacity: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.services1-col {
+    flex-basis: block;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 2px solid #28118f;
+    padding: 5px;
+    background-color: white;
+  }
+  
+  .services1-col ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+  }
+  
+  .services1-col ul li {
+    margin: 5px 0;
+  }
+  
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.service-col1 ul li a {
+.tab {
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tab.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+
+  .services1-col ul li a {
     color: #140101;
     text-decoration: none;
-    font-size: 20px;
-}
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  
 
 @media (max-width: 700px) {
     .row {

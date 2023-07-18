@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=devide-width, initial-scale=1.0">
+    <title> Florida Doctors Group</title>  
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@300;
+    400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/floridadoctorsgroup.png"></a>
+            <h4> Florida <br> Doctors <br> Group</h4>
+            <div class="header-nav-links nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME</a></li>
+                    <li><a href="#about"> ABOUT US</a></li>
+                    <li><a href="#services"> SERVICES</a></li>
+                    <li><a href="deptquestions.html"> CONTACT US</a></li>
+                    <li><a href="#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                    <li><a href=""> JOIN US</a></li>
+                    <li> <i class="fa fa-facebook social-icon"></i> </li>
+                    <li> <i class="fa fa-instagram social-icon"></i> </li>
+                    <li><i class="fa fa-twitter social-icon"></i></li> 
+                    <li><i class="fa fa-linkedin social-icon"></i></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>What We Offer</h1>
+        </div>
+    </section>
+
+        
+         <!-------------Services----------->
+         <section class="services1">
+          <h1>Marketing</h1>
+          <div class="services1-col">
+          <div class="row1">
+            <div class="tabs">
+              <button class="tab active" onclick="showTabContent(0)">Marketing Services</button>
+              <button class="tab" onclick="showTabContent(1)">Branding and Promotion</button>
+              
+            </div>
+            <div class="tab-content">
+              <div id="tab-0" class="tab-pane active">
+                <p>We support all our suppliers in creating events, wrapping vans & designs, exhibition and visibility of your clinic or medical center, advertising of services, mailing, among other resources to expose clinic and brand</p>
+              </div>
+              <div id="tab-1" class="tab-pane">
+                <p>Strategies development to prevent the operational performance that may impact anti-growth and render the business less profitable. </p>
+              </div>
+              
+            </div>
+          </div>
+      </div>
+      <div class="services1-col">
+          <div class="row1">
+          <ul> 
+              <li><a href="billingCoding.html">Revenue Cycle Management</a></li>
+              <li><a href="risk.html">Risk and Operational Management</a></li>  
+              <li><a href="tools.html">Tools and Equipment</a></li>
+                                      
+               <li><a href="emr.html">EMR System</a></li>
+               <li><a href="training.html">Training and Education</a> </li>
+               <li><a href="reports.html">Reports and Analytics</a> </li>
+               <li><a href="pharmacy.html">Pharmacy Management</a> </li>
+           </ul>
+          </div>
+      </div>
+        </section>
+        <!-------Footer --------->
+
+        <section class="footer">
+            <nav>
+                <a href="index.html"><img src="img/floridadoctorsgroup.png"></a>
+                <h4> Florida <br> Doctors <br> Group</h4>
+                <div class="footer-nav-links nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"> HOME</a></li>
+                        <li><a href="#about"> ABOUT US</a></li>
+                        <li><a href="#services"> SERVICES</a></li>
+                        <li><a href="deptquestions.html"> CONTACT US</a></li>
+                        <li><a href="#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                        <li><a href=""> JOIN US</a></li>
+                        <li> <i class="fa fa-facebook social-icon"></i> </li>
+                        <li> <i class="fa fa-instagram social-icon"></i> </li>
+                        <li><i class="fa fa-twitter social-icon"></i></li> 
+                        <li><i class="fa fa-linkedin social-icon"></i></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <p> Made with <i class="fa fa-heart-o"></i> by LM</p>
+        </section>
+
+
+     
+     
+     
+     <!-----------JavaScript for toggle menu ------------------------------------->
+     <script src="script.js"></script>
+</body>
+</html>
