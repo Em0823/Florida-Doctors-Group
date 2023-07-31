@@ -311,6 +311,7 @@ flex-basis: calc(25% - 40px); /* Divide by 4 and reduce a bit for margins */
 
       
 /*---------services--------*/
+
 .services {
     width: 100%;
     height: auto;
@@ -413,6 +414,7 @@ padding: 0;
 
 
 /*----------Services menu tab -------*/
+
 .services1 {
     width: 100%;
     box-sizing: border-box;
@@ -450,10 +452,11 @@ padding: 0;
 }
 
 .services1-col {
-    flex-basis: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: center;
     border: 2px solid #28118f;
     padding: 1% 2%;
     background-color: white;
@@ -533,6 +536,11 @@ padding: 0;
 
 .tab-pane.active {
     display: block;
+}
+
+.text-container {
+    max-width: 900px; /* You can adjust this value based on your needs */
+    margin: auto; /* Center the content horizontally */
 }
 
 @media (max-width: 700px) {
