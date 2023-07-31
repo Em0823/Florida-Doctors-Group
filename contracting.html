@@ -21,10 +21,10 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html"> HOME</a></li>
-                    <li><a href="#about"> ABOUT US</a></li>
-                    <li><a href="#services"> SERVICES</a></li>
+                    <li><a href="index.html#about"> ABOUT US</a></li>
+                    <li><a href="index.html#services"> SERVICES</a></li>
                     <li><a href="deptquestions.html"> CONTACT US</a></li>
-                    <li><a href="#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                    <li><a href="index.html#affiliated">AFFILIATED HEALTH PLANS</a></li>
                     <li><a href=""> JOIN US</a></li>
                     <li> <i class="fa fa-facebook social-icon"></i> </li>
                     <li> <i class="fa fa-instagram social-icon"></i> </li>
@@ -36,35 +36,36 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>Contracting Questionnaire</h1>
+            <h1>Questionnaire</h1>
         </div>
     </section>
 
         
-         <!-------------Contarcting Questionnaire----------->
+         <!-------------Contracting Questionnaire----------->
          <section class="questionnaire">
          <div class="container mt-4">
             <button type="button" class="btn btn-secondary" onclick="window.location.href='deptquestions.html';">Back to Department Selection</button>
 
             <h1>Contracting Questionnaire</h1>
-    
-            <form action="/submit/contracting" method="post">
-                <div class="form-group">
-                    <label for="contractingSystem"> I am interested in becoming a Provider of FDG</label>
-                    <input type="text" class="form-control" id="contractingSystem" name="contractingSystem">
-                </div>
-                <div class="form-group">
-                    <label for="contractingSystem"> I would like to inquire on your contracted plans</label>
-                    <input type="text" class="form-control" id="contractingSystem" name="contractingSystem">
-                </div>
-                <div class="form-group">
-                    <label for="contractingSystem">I would like to be contracted with a new plan </label>
-                    <input type="text" class="form-control" id="contractingSystem" name="contractingSystem">
-                </div>
-                <div class="form-group">
-                    <label for="contractingSystem"> I would like to discuss my current contract</label>
-                    <input type="text" class="form-control" id="contractingSystem" name="contractingSystem">
-                </div>
+                <p> Select all that apply</p>
+                <form action="/submit/contracting" method="post">
+                    <!-- Contracting Questions - Checkboxes -->
+                    <div class="form-group">
+                        <input type="checkbox" id="contractingSystem" name="contractingSystem" value="interested_provider">
+                        <label for="contractingSystem">I am interested in becoming a Provider of FDG</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="contractingSystem" name="contractingSystem" value="inquire_contracted_plans">
+                        <label for="contractingSystem">I would like to inquire about your contracted plans</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="contractingSystem" name="contractingSystem" value="contracted_with_new_plan">
+                        <label for="contractingSystem">I would like to be contracted with a new plan</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="contractingSystem" name="contractingSystem" value="discuss_current_contract">
+                        <label for="contractingSystem">I would like to discuss my current contract</label>
+                    </div>
             </section>
                 <!-- Add similar blocks for other questions -->
             <section class="contact-info">
@@ -118,10 +119,10 @@
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="index.html"> HOME</a></li>
-                        <li><a href="#about"> ABOUT US</a></li>
-                        <li><a href="#services"> SERVICES</a></li>
+                        <li><a href="index.html#about"> ABOUT US</a></li>
+                        <li><a href="index.html#services"> SERVICES</a></li>
                         <li><a href="deptquestions.html"> CONTACT US</a></li>
-                        <li><a href="#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                        <li><a href="index.html#affiliated">AFFILIATED HEALTH PLANS</a></li>
                         <li><a href=""> JOIN US</a></li>
                         <li> <i class="fa fa-facebook social-icon"></i> </li>
                         <li> <i class="fa fa-instagram social-icon"></i> </li>
