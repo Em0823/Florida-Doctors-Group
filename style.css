@@ -427,9 +427,10 @@ padding: 0;
 .row1 {
     margin-top: 5%;
     display: flex;
-    flex-wrap: wrap; /* Added flex-wrap to wrap the columns */
-    justify-content: space-between;
+    flex-wrap: wrap; 
+    justify-content: center; /* Ensure row1 content is centered */
 }
+
 .services1 h1 {
     font-size: 36px;
     font-weight: 600;
@@ -447,37 +448,55 @@ padding: 0;
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.8);
 }
+
 .services1-col {
     flex-basis: block;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: center;
     border: 2px solid #28118f;
-    padding: 5px;
+    padding: 1% 2%;
     background-color: white;
-  }
-  
-  .services1-col ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: right;
-  }
-  
-  .services1-col ul li {
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 100%;
+    flex: 1 1 auto;
+    box-sizing: border-box;
     margin: 5px 0;
-  }
-  
+    max-width: 200px;
+    min-width: 100px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #6699cc;
+}
 
 .tabs {
     display: flex;
     justify-content: center;
     background-color: #f2f2f2;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
 }
 
 .tab {
@@ -487,22 +506,25 @@ padding: 0;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    flex: 1 1 auto;
+    max-width: 200px;
+    text-align: center;
+    margin: 5px;
 }
 
-.tab:hover {
-    background-color: #ddd;
-}
-
-.tab.active {
-    background-color: #ddd;
+.tab:hover, .tab.active {
+    background-color: #6699cc;
+    border-radius: 5px; /* Adjust as needed */
 }
 
 .tab-content {
-    background-color: #f2f2f2;
+    background-color: #e6e6e6;
     border-radius: 10px;
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 90%; /* To ensure that tab-content does not exceed its container's width */
+    box-sizing: border-box; /* To include padding and border in the element's total width and height */
 }
 
 .tab-pane {
@@ -513,19 +535,19 @@ padding: 0;
     display: block;
 }
 
-
-  .services1-col ul li a {
-    color: #140101;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  
-
 @media (max-width: 700px) {
-    .row {
+    .row1 {
         flex-direction: column;
+    }
+    .tabs {
+        flex-wrap: wrap; /* Allows the tabs to wrap when the screen size is reduced */
+    }
+    .tab {
+        flex-basis: 100%; /* Makes each tab full width when screen size is reduced */
+        box-sizing: border-box;
+    }
+    .button-container {
+        grid-template-columns: 1fr; /* Stacks buttons on top of each other when screen size is reduced */
     }
 }
 
