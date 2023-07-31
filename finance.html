@@ -21,10 +21,10 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html"> HOME</a></li>
-                    <li><a href="#about"> ABOUT US</a></li>
-                    <li><a href="#services"> SERVICES</a></li>
+                    <li><a href="index.html#about"> ABOUT US</a></li>
+                    <li><a href="index.html#services"> SERVICES</a></li>
                     <li><a href="deptquestions.html"> CONTACT US</a></li>
-                    <li><a href="#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                    <li><a href="index.html#affiliated">AFFILIATED HEALTH PLANS</a></li>
                     <li><a href=""> JOIN US</a></li>
                     <li> <i class="fa fa-facebook social-icon"></i> </li>
                     <li> <i class="fa fa-instagram social-icon"></i> </li>
@@ -35,38 +35,50 @@
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
-            <h1>Billing Questionnaire</h1>
+            <h1>Questionnaire</h1>
         </div>
     </section>
 
         
-         <!-------------Billing Questionnaire----------->
+         <!-------------Finance Questionnaire----------->
          <section class="questionnaire">
          <div class="container mt-4">
             <button type="button" class="btn btn-secondary" onclick="window.location.href='deptquestions.html';">Back to Department Selection</button>
 
-            <h1>Billing Services Questionnaire</h1>
-    
-            <form action="/submit/billing" method="post">
+            <h1>Finance Questionnaire</h1>
+            <p>Select all that apply</p>
+
+            <form action="/submit/finance" method="post">
+                <!-- Finance Questions - Check all that applies -->
+                <form action="/submit/finance" method="post">
+                    <!-- Finance Questions - Checkboxes -->
+                    <div class="form-group">
+                        <input type="checkbox" id="capitationCheck1" name="capitationCheck" value="not_received">
+                        <label for="capitationCheck1">I haven't received my capitation check?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="capitationCheck2" name="capitationCheckExpect" value="next_week">
+                        <label for="capitationCheck2">When should I expect my capitation check?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="eftOnFile1" name="eftOnFile" value="yes">
+                        <label for="eftOnFile1">Do you all have my EFT (Electronic Funds Transfer) on file?</label>
+                    </div>
                 <div class="form-group">
-                    <label for="billingSystem">What billing system does the MSO use?</label>
-                    <input type="text" class="form-control" id="billingSystem" name="billingSystem">
+                    <label for="missingPayments">I am missing payments for my capitation:</label><br>
+                    <input type="checkbox" id="missingPayments1" name="missingPayments" value="yes">
+                    <label for="missingPayments1">Yes</label>
+                    <br>
+                    <input type="checkbox" id="missingPayments2" name="missingPayments" value="no">
+                    <label for="missingPayments2">No</label>
                 </div>
                 <div class="form-group">
-                    <label for="billingSystem"> If the MSO bill's Capitated members or FFS members or both??</label>
-                    <input type="text" class="form-control" id="billingSystem" name="billingSystem">
-                </div>
-                <div class="form-group">
-                    <label for="billingSystem">You want to check when the last billing for your members was completed?</label>
-                    <input type="text" class="form-control" id="billingSystem" name="billingSystem">
-                </div>
-                <div class="form-group">
-                    <label for="billingSystem">Would like training for Contracted Provider Staff?</label>
-                    <input type="text" class="form-control" id="billingSystem" name="billingSystem">
-                </div>
-                <div class="form-group">
-                    <label for="billingSystem">General Billing Questions?</label>
-                    <input type="text" class="form-control" id="billingSystem" name="billingSystem">
+                    <label for="billFFSMembers">I would like for you FDG to bill my FFS (Fee-for-Service) members.</label><br>
+                    <input type="checkbox" id="billFFSMembers1" name="billFFSMembers" value="yes">
+                    <label for="billFFSMembers1">Yes</label>
+                    <br>
+                    <input type="checkbox" id="billFFSMembers2" name="billFFSMembers" value="no">
+                    <label for="billFFSMembers2">No</label>
                 </div>
             </section>
                 <!-- Add similar blocks for other questions -->
@@ -121,10 +133,10 @@
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="index.html"> HOME</a></li>
-                        <li><a href="#about"> ABOUT US</a></li>
-                        <li><a href="#services"> SERVICES</a></li>
+                        <li><a href="index.html#about"> ABOUT US</a></li>
+                        <li><a href="index.html#services"> SERVICES</a></li>
                         <li><a href="deptquestions.html"> CONTACT US</a></li>
-                        <li><a href="#affiliated">AFFILIATED HEALTH PLANS</a></li>
+                        <li><a href="index.html#affiliated">AFFILIATED HEALTH PLANS</a></li>
                         <li><a href=""> JOIN US</a></li>
                         <li> <i class="fa fa-facebook social-icon"></i> </li>
                         <li> <i class="fa fa-instagram social-icon"></i> </li>
