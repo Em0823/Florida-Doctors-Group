@@ -40,43 +40,45 @@
     </section>
 
         
-         <!-------------Services----------->
-         <section class="services1">
-            <h1>Risk and Operational Management</h1>
-            <div class="services1-col">
-            <div class="row1">
-              <div class="tabs">
-                <button class="tab active" onclick="showTabContent(0)">Risk Management</button>
-                <button class="tab" onclick="showTabContent(1)">Operational Issues</button>
-                <button class="tab" onclick="showTabContent(2)">Logistical Support</button>
-              </div>
-              <div class="tab-content">
-                <div id="tab-0" class="tab-pane active">
+<!-------------Services----------->
+
+<section class="services1">
+  <h1>Risk and Operational Management</h1>
+  <div class="services1-col">
+      <div class="row1">
+          <div class="tabs">
+              <button class="tab active" onclick="showTabContent(0)">Risk Management</button>
+              <button class="tab" onclick="showTabContent(1)">Operational Issues</button>
+              <button class="tab" onclick="showTabContent(2)">Logistical Support</button>
+          </div>
+          <div class="tab-content">
+              <div id="tab-0" class="tab-pane active">
                   <p>Identifying, assessing, controlling threats to an organization’s capital and earnings. Utilization Management / Referrals / Pharmacy Reports /  Hospitals and Facilities. Peer-to-Peer consultation with our MD</p>
-                </div>
-                <div id="tab-1" class="tab-pane">
-                  <p>Strategies development to prevent the operational performance that may impact anti-growth and render the business less profitable. </p>
-                </div>
-                <div id="tab-2" class="tab-pane">
-                  <p> Credentialing Primary Care Physicians with Managed Care Organizations.</p>
-                </div>
               </div>
-            </div>
-        </div>
-        <div class="services1-col">
-            <div class="row1">
-            <ul> 
-                <li><a href="billingCoding.html">Revenue Cycle Management</a></li> 
-                <li><a href="tools.html">Tools and Equipment</a></li>
-                 <li><a href="market.html">Marketing</a></li>                        
-                 <li><a href="emr.html">EMR System</a></li>
-                 <li><a href="training.html">Training and Education</a> </li>
-                 <li><a href="reports.html">Reports and Analytics</a> </li>
-                 <li><a href="pharmacy.html">Pharmacy Management</a> </li>
-             </ul>
-            </div>
-        </div>
-          </section>
+              <div id="tab-1" class="tab-pane">
+                  <p>Strategies development to prevent the operational performance that may impact anti-growth and render the business less profitable. </p>
+              </div>
+              <div id="tab-2" class="tab-pane">
+                  <p> Credentialing Primary Care Physicians with Managed Care Organizations.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row1"> <!-- Replaced services1-col with row1 -->
+      <div class="services1-col"> <!-- Added services1-col here -->
+          <div class="button-container">
+              <a class="button" href="billingCoding.html">Revenue Cycle Management</a> 
+              <a class="button" href="tools.html">Tools and Equipment</a>
+              <a class="button" href="market.html">Marketing</a>                        
+              <a class="button" href="emr.html">EMR System</a>
+              <a class="button" href="training.html">Training and Education</a>
+              <a class="button" href="reports.html">Reports and Analytics</a>
+              <a class="button" href="pharmacy.html">Pharmacy Management</a>
+          </div>
+      </div>
+  </div>
+</section>
+
 <!-------Footer --------->
 
         <section class="footer">
@@ -102,14 +104,8 @@
             </nav>
             <p> Made with <i class="fa fa-heart-o"></i> by LM</p>
         </section>
-   
-   
 
-
-     
-     
-     
-     <!-----------JavaScript for toggle menu ------------------------------------->
+<!-----------JavaScript for toggle menu ------------------------------------->
      <script src="script.js"></script>
 </body>
 </html>
