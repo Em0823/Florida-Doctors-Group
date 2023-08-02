@@ -61,3 +61,33 @@ tabContent[index].classList.add("active");
 tabs[index].classList.add("active");
 }
 
+let currentSlide = 1;
+
+function nextSlide() {
+    currentSlide++;
+    if (currentSlide > numSlides) {
+        currentSlide = 1;
+    }
+    updateSlide();
+}
+
+function prevSlide() {
+    currentSlide--;
+    if (currentSlide < 1) {
+        currentSlide = numSlides;
+    }
+    updateSlide();
+}
+
+function updateSlide() {
+    const slider = document.querySelector('.slider');
+    const slideWidth = document.querySelector('.slide').clientWidth;
+    const newPosition = -((currentSlide - 1) * slideWidth);
+    slider.style.transform = `translateX(${newPosition}px)`;
+}
+
+const numSlides = document.querySelectorAll('.slide').length;
+
+// Add event listeners for navigation
+document.querySelector('.next-btn').addEventListener('click', nextSlide);
+document.querySelector('.prev-btn').addEventListener('click', prevSlide);
