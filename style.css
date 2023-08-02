@@ -425,8 +425,20 @@ padding: 0;
     padding-left: 5%;
     padding-right: 5%;
 }
+.services1-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    border: 2px solid #28118f;
+    padding: 1% 2%;
+    background-color: white;
+    flex: 1;
+}
 
-.row1 {
+
+.services1 .row1 {
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap; 
@@ -436,7 +448,7 @@ padding: 0;
 .services1 h1 {
     font-size: 36px;
     font-weight: 600;
-    color: rgb(40, 37, 233);
+    color: rgb(14, 94, 160);
     margin-bottom: 20px;
 }
 
@@ -451,16 +463,6 @@ padding: 0;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.services1-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    border: 2px solid #28118f;
-    padding: 1% 2%;
-    background-color: white;
-}
 
 .button-container {
     display: grid;
@@ -558,6 +560,7 @@ padding: 0;
         grid-template-columns: 1fr; /* Stacks buttons on top of each other when screen size is reduced */
     }
 }
+
 
 
 
@@ -863,7 +866,7 @@ label {
   /*---------------continue process info--------------*/
 
   .continue{
-    margin-top: 5%;
+    margin-top: 1%;
     width: 60%;
     text-align: center;
    margin-left: 20%;
@@ -900,8 +903,8 @@ label {
     color: white;
     padding-top: 10%;
     padding-bottom: 20%;
-    background-image: linear-gradient(rgba(13, 14, 15, 0.808), rgba(21, 22, 22, 0.671), rgba(21, 22, 22, 0.486), rgba(23, 24, 24, 0.144)), url(img/marketing.png);
-}
+    background-image: linear-gradient(rgba(13, 14, 15, 0.712), rgba(21, 22, 22, 0.527), rgba(21, 22, 22, 0.486), rgba(23, 24, 24, 0.144)), url(img/Untitled\ design\ \(3\).png);
+    }
 
 /*---------------contact us external page--------------*/
 
