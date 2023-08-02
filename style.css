@@ -435,6 +435,7 @@ padding: 0;
 
 .services1 {
     width: 100%;
+    height: auto;
     box-sizing: border-box;
     margin: auto;
     text-align: center;
@@ -442,6 +443,7 @@ padding: 0;
     padding-bottom: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.685)), url(img/compass2.png);
 }
 .services1-col {
     display: flex;
@@ -450,13 +452,15 @@ padding: 0;
     border-radius: 10px;
     margin-bottom: 5%;
     border: 2px solid #28118f;
-    padding: 1% 2%;
-    background-color: white;
+    padding-top: 1%;
+    background-color: rgba(255, 255, 255, 0.8);
     flex: 1;
+    
 }
 
 
-.services1 .row1 {
+ .row1 {
+    justify-content: space-between;
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap; 
@@ -466,7 +470,7 @@ padding: 0;
 .services1 h1 {
     font-size: 36px;
     font-weight: 600;
-    color: rgb(14, 94, 160);
+    color: rgb(241, 247, 252);
     margin-bottom: 20px;
 }
 
@@ -483,7 +487,6 @@ padding: 0;
 
 
 .button-container {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     padding: 20px;
